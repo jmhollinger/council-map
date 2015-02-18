@@ -7,29 +7,31 @@ function initialize() {
     center: {lat: 38.048876, lng: -84.499932}, 
   });
 
-var district_url = GetURLParam("district")
+var url_id = GetURLParam("id")
 
 map.data.loadGeoJson("data/council.geojson");
 
 map.data.setStyle(function(feature) {
-    var district_geo = feature.getProperty('DISTRICT');
+    var geo_id = feature.getProperty('DISTRICT');
+    
     var blue = {
     fillColor: '#2A6FBD',
     fillOpacity: 0.2,
     strokeColor: '#2A6FBD',
     strokeWeight: 2
     };
+    
     var hide = {visible: false}
-    if (district_url == district_geo){return blue}
+
+    if (url_id == geo_id){return blue}
     else {return hide}  
 });
+
 
 
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-console.log("District " + GetURLParam("district"))
 
 function GetURLParam(sParam){
 var sPageURL = window.location.search.substring(1);
