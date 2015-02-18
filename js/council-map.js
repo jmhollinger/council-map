@@ -19,8 +19,9 @@ map.data.setStyle(function(feature) {
     strokeColor: '#2A6FBD',
     strokeWeight: 2
     };
+    var hide = {visible: false}
     if (district_url == district_geo){return blue}
-    else {visible: false}  
+    else {return hide}  
 });
 
 
