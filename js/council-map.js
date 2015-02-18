@@ -13,23 +13,14 @@ function initialize() {
 
     var blue = {
     fillColor: '#2A6FBD',
-    fillOpacity: 0.1,
+    fillOpacity: 0.2,
     strokeColor: '#2A6FBD',
     strokeWeight: 2
     };
 
   map.data.setStyle(blue);
 
-    var red = {
-    fillColor: 'red',
-    fillOpacity: 0.1,
-    strokeColor: 'red',
-    strokeWeight: 2
-    };
 
-  if (GetURLParam("district") = 1)
-    {map.data.setStyle(red)}
-  else {}    
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
