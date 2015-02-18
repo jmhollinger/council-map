@@ -22,7 +22,7 @@ function initialize(){
   map.data.setStyle(blue);
   
   map.data.loadGeoJson('data/council.geojson')
-
+  
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
