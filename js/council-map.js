@@ -20,7 +20,16 @@ function initialize() {
 
   map.data.setStyle(blue);
 
+    var red = {
+    fillColor: 'red',
+    fillOpacity: 0.1,
+    strokeColor: 'red',
+    strokeWeight: 2
+    };
 
+  if (GetURLParam("district") = 1)
+    {map.data.setStyle(red)}
+  else {}    
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
