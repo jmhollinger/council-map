@@ -1,6 +1,6 @@
 html, body {
 height: 100%;
-font-family: Roboto; Helvetica, san-serif;
+font-family: Montserrat; Helvetica, san-serif;
 }
 
 .container-fluid{
@@ -12,55 +12,3 @@ padding: 0px;
       width: 100%;
       min-height: 100%;
        }
-
-#pac-input {
-      text-overflow: ellipsis;
-  }
-
-#info-box {
-    width: 30%;
-    min-width: 300px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1;
-  }
-
-  #info-box .panel-heading, .panel-footer {
-    background-color: #009966;
-    color: #FFF;
-  }
-
-  #info-box .panel-heading h3{
-  margin: 0px
-  }
-
-.subtitle{
-  margin:0px 0px 0px 0px;
-}
-
-.infowindow{
- width: 180px;
-  
-}
-
-.feature-list {
-list-style: none;
-margin: 1em 0px 0px 0px;
-padding: 0px;  
-}
-
-.feature-list li{
-margin: 0px
-}
-
-.park-name {
-margin: .1em;
-font-weight: bold;
-color: #009966;
-font-size: 1.2em
-}
-
-.park-address {
-margin: 0px;  
-}
