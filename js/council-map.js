@@ -1,6 +1,6 @@
 $("#generate_map").click(
 function generate_map(){
-var base_url = 'http://jmhollinger.github.io/council-map/'
+var base_url = 'http://jmhollinger.github.io/council-map/map.html'
 var id = $("#district").val()  
 var color =  $("#color").val()  
 var width = $("#width").val()  
